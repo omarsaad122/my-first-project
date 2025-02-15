@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>عمر سعد حسن - ملف شخصي</title>
+    <style>
+        /* إعادة ضبط الهوامش والحشو */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        /* تنسيق عام للصفحة */
+        body {
+            font-family: 'Arial', sans-serif;
+            background: linear-gradient(135deg, #1e3c72, #2a5298);
+            color: #fff;
+            line-height: 1.6;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            overflow: hidden;
+        }
+
+        /* تنسيق البطاقة الشخصية */
+        .profile-card {
+            background: rgba(255, 255, 255, 0.1);
+            padding: 30px;
+            border-radius: 15px;
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
+            text-align: center;
+            max-width: 400px;
+            width: 100%;
+            animation: fadeIn 2s ease-in-out;
+        }
+
+        .profile-card h1 {
+            font-size: 2.5rem;
+            margin-bottom: 10px;
+            color: #4CAF50;
+        }
+
+        .profile-card h2 {
+            font-size: 1.5rem;
+            margin-bottom: 20px;
+            color: #ccc;
+        }
+
+        .profile-card p {
+            font-size: 1.1rem;
+            margin-bottom: 15px;
+        }
+
+        .profile-card .highlight {
+            color: #4CAF50;
+            font-weight: bold;
+        }
+
+        .profile-card button {
+            padding: 10px 20px;
+            font-size: 1rem;
+            background: #4CAF50;
+            color: #fff;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: background 0.3s ease;
+        }
+
+        .profile-card button:hover {
+            background: #45a049;
+        }
+
+        /* تأثيرات الحركة */
+        @keyframes fadeIn {
+            from {
+                opacity: 0;
+                transform: translateY(-20px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        /* تنسيق الخلفية المتحركة */
+        .background {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            z-index: -1;
+            background: linear-gradient(135deg, #1e3c72, #2a5298);
+            animation: moveBackground 10s infinite alternate;
+        }
+
+        @keyframes moveBackground {
+            from {
+                transform: scale(1);
+            }
+            to {
+                transform: scale(1.2);
+            }
+        }
+    </style>
+</head>
+<body>
+    <!-- خلفية متحركة -->
+    <div class="background"></div>
+
+    <!-- البطاقة الشخصية -->
+    <div class="profile-card">
+        <h1>عمر سعد حسن</h1>
+        <h2>طالب في كلية PPIS</h2>
+        <p>مرحبًا! أنا <span class="highlight">عمر سعد حسن</span>، طالب في كلية <span class="highlight">PPIS</span>.</p>
+        <p>أدرس حاليًا في مجال العلوم السياسية والإدارة العامة، وأطمح إلى تحقيق تأثير إيجابي في مجتمعي.</p>
+        <p>أحب البرمجة والتصميم، وأعمل دائمًا على تطوير مهاراتي في هذه المجالات.</p>
+        <p>شغفي هو تعلم كل ما هو جديد وتحويل الأفكار إلى واقع ملموس.</p>
+        <button onclick="showMessage()">اضغط هنا للترحيب!</button>
+    </div>
+
+    <!-- JavaScript -->
+    <script>
+        function showMessage() {
+            alert("مرحبًا بك، عمر! أنت شخص مبدع ومميز. استمر في التقدم نحو أهدافك! 🚀");
+        }
+    </script>
+</body>
+</html>
